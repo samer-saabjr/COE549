@@ -1,0 +1,7 @@
+grandalf==0.8
+python-dotenv==1.1.1
+ipykernel
+langchain==0.3.27
+langchain-google-genai==2.1.10
+langgraph==0.6.6
+pydantic==2.11.7

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LLMs"
+version = "0.0.1"
+description = "LLMs"
+dynamic = ["dependencies"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+package-data = {"*" = ["*"]}
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rewai*"]
+namespaces = false
