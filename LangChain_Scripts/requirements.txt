@@ -1,0 +1,10 @@
+langchain
+langchain-openai==0.3.28
+langchain-core
+langchain_chroma
+langgraph
+chromadb
+langchain-community
+pypdf
+streamlit
+pdfplumber
