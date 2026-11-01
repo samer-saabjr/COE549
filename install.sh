@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 ################################################################
 
 # Remove Python cache directories
@@ -9,4 +11,4 @@ find src/llms_course -type d -name '*.egg-info' -exec rm -rf {} +
 ################################################################
 
 # Install the project
-# pip install -e .
+python -m pip install -e .
